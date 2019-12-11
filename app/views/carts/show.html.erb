@@ -1,9 +1,12 @@
 <section class="cart-show">
 
-  <header class="page-header">
-    <h1>My Cart</h1>
-  </header>
-
+    <% if cart_subtotal_cents == 0 %>
+    <h4> your cart is empty press the back button below </h4>
+ <%= link_to 'Back', products_path %>
+<header class="page-header">
+  <% else %> 
+<h1>My Cart</h1>
+</header>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -25,7 +28,7 @@
             TOTAL:
           </th>
           <th>
-            <%= cart_subtotal_cents / 1000.0 %>
+            <%= cart_subtotal_cents / 10 %>
           </th>
         </tr>
       </tfoot>
@@ -48,5 +51,5 @@
       <% end %>
     </div>
   </div>
-
+  <% end %>
 </section>
