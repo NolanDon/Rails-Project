@@ -14,6 +14,7 @@
         <li>
           <%= link_to 'Home', :root %>
         </li>
+        
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             Categories
@@ -29,10 +30,19 @@
           </ul>
         </li>
       </ul>
+      <% if logged_in? %>
+              <h5>welcome, <%= current_user.username %></h5>
+              <%= button_to "logout", '/logout', class: 'btn btn-info', method: :delete%>
+            <% else %>
+              <%= button_to "Sign Up", '/users/new', class: 'btn btn-info', method: :get%>
+              <%= button_to "Login", '/login', class: 'btn btn-info', method: :get%>
+          <%end%>
+          
+          
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-
+          
             <span class="text-danger"><%= fa_icon 'lock', text: 'Admin' %></span>
             <span class="caret"></span>
           </a>
