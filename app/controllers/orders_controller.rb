@@ -1,7 +1,11 @@
 class OrdersController < ApplicationController
-
+# has_many :line_items
+    # @product = Order.line_items
   def show
     @order = Order.find(params[:id])
+    if @order
+      @products = @order.line_items
+    end
   end
 
   def create
