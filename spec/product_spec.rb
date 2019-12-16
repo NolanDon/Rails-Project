@@ -1,22 +1,17 @@
-Rspec.describe Product, type: :model do
+require 'rails_helper'
+
+RSpec.describe Product, type: :model do
   describe 'Validations' do
-    # validation tests/examples here
-
-      describe Name do
-        it { is_expected.to have_many(:surveys) } # shortcut for expect(subject).to
-      end
-      
-      describe Price do
-        it { is_expected.to belong_to(:user) }
-
-      describe Quantity do
-        it { is_expected.to have_many(:surveys) } # shortcut for expect(subject).to
-      end
-      
-      describe Category do
-        it { is_expected.to belong_to(:user) }
-
-      end
-    end
-  end
-end
+    it 'should create product if, name, price, category, quantity are present' do
+    @category = Category.new(name: "Testing")
+    @product =   Product.new(
+                            name: "PICKLE RICK KEYCHAIN",
+                            price_cents: 200,
+                            description: "SMALL AND DURABLE",
+                            :category => @category,
+                            quantity: 35
+                            )    
+                            @product.valid?
+                            end                     
+                           end
+                         end
