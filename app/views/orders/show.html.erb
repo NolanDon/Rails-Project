@@ -4,10 +4,22 @@
     <h1>Order #<%= @order.id %></h1>
   </header>
 
+
+  <h2>𝘛𝘩𝘢𝘯𝘬-𝘺𝘰𝘶 𝘧𝘰𝘳 𝘺𝘰𝘶𝘳 𝘰𝘳𝘥𝘦𝘳!</h2>
+  <h3>𝘠𝘰𝘶𝘳 𝘗𝘶𝘳𝘤𝘩𝘢𝘴𝘦𝘴:</h3>
   <div class="order-summary jumbotron">
-    <h4>Thank you for your order!</h4>
+      <% @products.each do |item| %>
+        <%= render 'line_item',
+        product: item.product, 
+        quantity: item[:quantity].to_i,
+        total: item[:total_price_cents] %>
+      <% end %>
+      <div class="aside.price">
+        <dt>Total Price</dt>
+            <dd><% total_cent = @products.reduce(0) { |sum, item| sum + ( item[:total_price_cents])} %></dd>
+              <dd><%= total_cent / 1000.00 %></dd>
+        <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
+      </div>
   </div>
-
-  <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
-
+  
 </section>

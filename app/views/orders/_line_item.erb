@@ -1,0 +1,28 @@
+<section class="products-show">
+
+  <article class="product-detail">
+
+    <div class="row">
+
+      <div class="col-sm-4">
+        <%= image_tag product.image.url, class: 'main-img' %>
+      </div>
+
+      <div class="col-sm-8">
+        <dl class="dl-horizontal">
+          <dt>Name</dt>
+          <dd><%= product.name %></dd>
+          <dt>Description</dt>
+          <dd><%= product.description %></dd>
+          <dt>Quantity</dt>
+          <dd><%= quantity %></dd>
+          <dt>Price</dt>
+          <dd><%= total / 1000.00 %></dd>
+         
+        </dl>
+      </div>
+    </div>
+
+  </article>
+
+</section>
