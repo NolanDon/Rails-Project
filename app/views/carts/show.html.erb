@@ -1,6 +1,6 @@
 <section class="cart-show">
 
-    <% if cart_subtotal_cents == 0 %>
+    <% if cart.size == 0 %>
     <h4> your cart is empty press the back button below </h4>
     <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
