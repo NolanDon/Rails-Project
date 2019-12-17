@@ -28,11 +28,12 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: [:new, :create]
-    get 'login', to: 'sessions#new'
-    post 'login', to: 'sessions#create'
-    get 'welcome', to: 'sessions#welcome'
-    get 'authorized', to: 'sessions#page_requires_login'
-    delete 'logout',  to: 'sessions#destroy'
+    get '/login' => 'sessions#new'
+    post '/login' => 'sessions#create'
+    get '/logout' => 'sessions#destroy'
+
+    get '/signup' => 'users#new'
+    post '/users' => 'users#create'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
