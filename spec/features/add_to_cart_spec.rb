@@ -17,11 +17,12 @@ RSpec.feature "Visitor navigates to product details page", type: :feature, js: t
     end
   end
 
-  scenario "They see an individual product" do
+  scenario "When add to cart is clicked, the cart increases by 1" do
     visit root_path
-    click_link("Details »", match: :first)
-    expect(page).to have_css 'section.products-show', count: 1
-    
+    click_on("Add", match: :first)
+    expect(page).to have_content ("My Cart (1)")
+    save_and_open_screenshot
+   
   end
 
 end
