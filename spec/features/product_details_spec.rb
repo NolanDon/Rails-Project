@@ -21,7 +21,7 @@ RSpec.feature "Visitor navigates to product details page", type: :feature, js: t
     visit root_path
     click_link("Details »", match: :first)
     expect(page).to have_css 'section.products-show', count: 1
-    save_and_open_screenshot
+    
   end
 
 end
