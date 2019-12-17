@@ -30,14 +30,16 @@
           </ul>
         </li>
       </ul>
-      <% if logged_in? %>
-              <h5>welcome, <%= current_user.username %></h5>
-              <%= button_to "logout", '/logout', class: 'btn btn-info', method: :delete%>
-            <% else %>
-              <%= button_to "Sign Up", '/users/new', class: 'btn btn-info', method: :get%>
-              <%= button_to "Login", '/login', class: 'btn btn-info', method: :get%>
-          <%end%>
-          
+      
+               
+        <% if current_user %>
+        Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+        <% else %>
+        <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+        <% end %>
+
+        <%= yield %>
+                  
           
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
