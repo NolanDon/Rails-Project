@@ -3,7 +3,11 @@ class SessionsController < ApplicationController
   
   def new
   end
+
   def login
+    if !user_id
+      raise ActionController::RoutingError.new('Not Found')  
+    end
   end
   
   def create

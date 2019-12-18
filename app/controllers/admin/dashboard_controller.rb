@@ -1,9 +1,7 @@
 # app/controllers/dashboard_controller.rb
 class Admin::DashboardController < ApplicationController
   
-  ad_name = ENV['admin_username']
-  ad_password = ENV['admin_password']
-  http_basic_authenticate_with name: ad_name, password: ad_password
+  before_filter :authenticate
 
   def show
   end
