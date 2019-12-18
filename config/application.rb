@@ -29,7 +29,7 @@ module Jungle
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    config.secret_key_base = 'blipblapblup'
+    config.secret_key_base = "57bef3d556125c473ceb3a14ebbf8a132764c7cfba3963284542d7a43c03bc119954184c3d71bc40d947a6c304f163bc4ba836b44a595de713070008a895794b"
     config.generators do |g|
       g.skip_routes  true
       g.helper       false
