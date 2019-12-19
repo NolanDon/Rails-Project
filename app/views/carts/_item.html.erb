@@ -14,6 +14,15 @@
     <%= quantity %>
   </td>
   <td>
+      <%= link_to remove_item(product_id: product_id), class: 'btn btn-xs btn-danger', method: :delete do %>
+        -
+      <% end %>
+      <%= quantity %>
+      <%= link_to add_item(product_id: product_id), class: 'btn btn-xs btn-success', method: :put do %>
+        +
+      <% end %>
+    </td>
+  <td>
     <%= product.price / 10 * quantity %>
   </td>
 </tr>
