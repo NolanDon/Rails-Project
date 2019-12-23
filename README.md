@@ -1,9 +1,8 @@
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+
 # Nolans "Jungle" Project (Lighthouse Labs)
 
-
 ## Background
-This project was completed as of Week 10 in the Web Development bootcamp at Lighthouse Labs. I inherited an existing code base in a language with barely any prior experience with the codebase, ecosystem and framework.
+This project was completed as of Week 10 in the Web Development bootcamp at Lighthouse Labs. Jungle-rails is a mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. I inherited an existing code base in a language with barely any prior experience with the codebase, ecosystem and framework.
 
 ## Functional Requirements
 There are multiple goals to this project:
