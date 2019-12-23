@@ -17,7 +17,7 @@
       <div class="price">
         <dt>Total Price:</dt>
             <dd><% total_cent = @products.reduce(0) { |sum, item| sum + ( item[:total_price_cents])} %></dd>
-              <dd><%= total_cent / 100.00 %>$</dd>
+              <dd><%= total_cent / 1000.00 %>$</dd>
       </div>
       <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
   </div>
