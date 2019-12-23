@@ -1,4 +1,18 @@
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+# Nolans "Jungle" Project (Lighthouse Labs)
+
+
+## Background
+This project was completed as of Week 10 in the Web Development bootcamp at Lighthouse Labs. I inherited an existing code base in a language with barely any prior experience with the codebase, ecosystem and framework.
+
+## Functional Requirements
+There are multiple goals to this project:
+
+- Become familiar with Ruby and the Rails framework
+- Learn how to navigate an existing code-base
+- Use existing code style and approach to implement new features in unfamiliar territory
+- Apply previous learning tactics to research and become familiar with a new paradigm, language and framework
+- A simulation of the real world where feature and bug-fix requests are listed instead of step-by-step instructions on how to implement a solution
 
 # Jungle
 ## Home Page
@@ -29,8 +43,26 @@ Use Credit Card # 4242 4242 4242 4242 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
-## Dependencies
+## Dependencies, Scripts, and External Requirements/Resources
 
-* Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+* Bcrypt
+* Bootstrap
+* Byebug
+* Capybara
+* Database_Cleaner
+* Faker
+* jQuery-Rails
+* Money-Rails
+* Poltergeist
 * PostgreSQL 9.x
+* Puma
+* Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+* RMagick
+* Sass
+* Spring
 * Stripe
+* Turbolinks
+
+## Contact
+
+Question? Comments? Email: Nolan796@live.ca
