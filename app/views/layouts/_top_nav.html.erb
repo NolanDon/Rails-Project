@@ -30,11 +30,7 @@
           </ul>
         </li>
       </ul>
-      
-               
-    
-                  
-          
+
       <ul class="nav navbar-nav navbar-right">
 
        <li class="dropdown">
@@ -56,7 +52,7 @@
         </li>
  <% if current_user %>
   <li class="user-info">
-    Signed in as <%= current_user.name %>  
+    Hi, <%= current_user.name %>  
   </li>
   <li>
     <%= link_to 'Logout', '/logout' %>

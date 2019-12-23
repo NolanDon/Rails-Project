@@ -1,16 +1,12 @@
-<h3>Signup </h3>
-<br>
-<%= form_for :user, url: '/users' do |f| %>
-
-  Name: <%= f.text_field :name %><br>
+<section class="sessions-new">
+  <h3>Signup </h3>
   <br>
-  Email:  <%= f.text_field :email %><br>
-  <br><br>
-  <h6> Password must be 6 characters minimum </h6>
-  Password: <%= f.password_field :password %>
-  Confirm: <%= f.password_field :password_confirmation %>
-  <br><br>
-  <%= f.submit "Submit", class: 'btn btn-lg btn-primary' %>
-
-<% end %>
-
+  <%= form_for :user, url: '/users' do |f| %>
+    Name: <%= f.text_field :name %><br><br>
+    Email:  <%= f.text_field :email %><br><br>
+    Password: <%= f.password_field :password %><br><br>
+    Confirm: <%= f.password_field :password_confirmation %><br><br>
+    <h6> Password must be 6 characters minimum </h6>
+    <%= f.submit "create your account", id: 'submitbtn' %>
+  <% end %>
+</section>

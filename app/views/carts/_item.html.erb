@@ -8,21 +8,14 @@
     <p><%= product.description %></p>
   </td>
   <td>
-    <%= product.price / 10 %>
+    <%= humanized_money_with_symbol product.price %>
   </td>
   <td>
+    <%= button_to remove_item_cart_path(product_id: product.id), class: 'btn btn-xs btn-danger' do %> - <% end %>
     <%= quantity %>
+    <%= button_to add_item_cart_path(product_id: product.id), class: 'btn btn-xs btn-success' do %> + <% end %>
   </td>
   <td>
-      <%= link_to remove_item(product_id: product_id), class: 'btn btn-xs btn-danger', method: :delete do %>
-        -
-      <% end %>
-      <%= quantity %>
-      <%= link_to add_item(product_id: product_id), class: 'btn btn-xs btn-success', method: :put do %>
-        +
-      <% end %>
-    </td>
-  <td>
-    <%= product.price / 10 * quantity %>
+    <%= humanized_money_with_symbol product.price * quantity %>
   </td>
 </tr>

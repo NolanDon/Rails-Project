@@ -85,3 +85,54 @@ main section.products-show {
 }
 
 
+main section.sessions-new {
+
+  form {
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+        0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 300px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid darkgray;
+}
+}
+
+#submitbtn {
+  margin-left: 5%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+        0 10px 10px rgba(0,0,0,0.22);
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  background: rgb(203, 255, 203);
+  width: 200px;
+  border: 2px solid rgba(0, 0, 0, 0.493);
+}
+
+
+h3 {
+  text-align: center;
+}
+
+li.user-info {
+  margin-top: 15px;
+  opacity: 0.6;
+}
+
+.price {
+  text-align: right;
+}

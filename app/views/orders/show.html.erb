@@ -6,7 +6,7 @@
 
 
   <h2>Thank-you for your order!</h2>
-  <h3>Your Purchases:</h3>
+  <h4>Your Purchases:</h4>
   <div class="order-summary jumbotron">
       <% @products.each do |item| %>
         <%= render 'line_item',
@@ -14,12 +14,12 @@
         quantity: item[:quantity].to_i,
         total: item[:total_price_cents] %>
       <% end %>
-      <div class="aside.price">
-        <dt>Total Price</dt>
+      <div class="price">
+        <dt>Total Price:</dt>
             <dd><% total_cent = @products.reduce(0) { |sum, item| sum + ( item[:total_price_cents])} %></dd>
-              <dd><%= total_cent / 1000.00 %></dd>
-        <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
+              <dd><%= total_cent / 100.00 %>$</dd>
       </div>
+      <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
   </div>
   
 </section>

@@ -8,7 +8,6 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      raise ArgumentError, "password must be 6 digits"
       redirect_to '/signup'
     end
   end

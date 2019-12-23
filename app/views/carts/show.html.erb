@@ -1,12 +1,12 @@
 <section class="cart-show">
 
     <% if cart.size == 0 %>
-    <h4> Your cart is empty! Navigate back below</h4>
+    <h4> Your cart is empty!</h4>
     <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 <header class="page-header">
   <% else %> 
-<h1>My Cart</h1>
+<h2>>> My Cart</h2>
 </header>
   <div class="panel panel-default items">
     <table class="table table-bordered">
@@ -29,7 +29,7 @@
           TOTAL:
         </th>
         <th>
-          <%= cart_subtotal_cents / 1000.00 %>
+        <%= humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
         </th>
       </tr>
     </tfoot>
