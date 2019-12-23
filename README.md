@@ -1,11 +1,12 @@
 # Jungle
 
 ## Screenshots
-![Screenshot from 2019-12-22 19-25-20](https://user-images.githubusercontent.com/48977789/71331908-5af5d500-24f1-11ea-834d-4da3188b65ea.png)
-![Screenshot from 2019-12-22 19-24-47](https://user-images.githubusercontent.com/48977789/71331909-5af5d500-24f1-11ea-9010-df3b58fe305c.png)
-![Screenshot from 2019-12-22 19-24-22](https://user-images.githubusercontent.com/48977789/71331910-5af5d500-24f1-11ea-92ce-31cc783bd0c9.png)
-![Screenshot from 2019-12-22 19-24-00](https://user-images.githubusercontent.com/48977789/71331911-5af5d500-24f1-11ea-8315-97507bd48814.png)
-![Screenshot from 2019-12-22 17-23-56](https://user-images.githubusercontent.com/48977789/71331912-5b8e6b80-24f1-11ea-84f2-c2dfb982e778.png)
+![Screenshot from 2019-12-22 19-25-20](https://user-images.githubusercontent.com/48977789/71332016-cb045b00-24f1-11ea-9fe7-3b515ea839c4.png)
+![Screenshot from 2019-12-22 19-24-47](https://user-images.githubusercontent.com/48977789/71332017-cb045b00-24f1-11ea-9f2d-d3f435539c62.png)
+![Screenshot from 2019-12-22 19-24-22](https://user-images.githubusercontent.com/48977789/71332018-cb045b00-24f1-11ea-946a-63a023110194.png)
+![Screenshot from 2019-12-22 19-24-00](https://user-images.githubusercontent.com/48977789/71332019-cb045b00-24f1-11ea-95ce-6b69066647bb.png)
+![Screenshot from 2019-12-22 17-23-56](https://user-images.githubusercontent.com/48977789/71332020-cb045b00-24f1-11ea-8ec6-d0b3001827e9.png)
+
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
