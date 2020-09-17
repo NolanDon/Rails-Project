@@ -63,5 +63,3 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Turbolinks
 
 ## Contact
-
-Question? Comments? Email: Nolan796@live.ca
